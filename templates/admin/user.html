@@ -14,14 +14,21 @@
     <h1>user</h1>
 
     <ul>
-        {{range .}}
+        {{range .users}}
             <li> {{.Email}} </li>
         {{end}}
     </ul>
 
 
+    <div>
+        {{ range $i := .pages }}
 
-    <button>CLICK</button>
+        {{ $i }}
+
+        {{ end }}
+    </div>
+
+
 
 
 </body>
